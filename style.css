@@ -23,8 +23,8 @@ body {
   background-size: cover;
   background-position: center;
   position: relative;
-  opacity: 0.9;
-  height: 45vh;
+  opacity: 0.95;
+  height: 40vh;
 }
 
 .budget {
@@ -37,7 +37,7 @@ body {
 }
 
 .budget__title {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 300;
   text-align: center;
   margin-bottom: 10px;
@@ -119,6 +119,7 @@ body {
   color: inherit;
   margin-right: 10px;
   font-weight: 300;
+  transition: border 0.4s;
 }
 
 .add__description,
@@ -131,6 +132,7 @@ body {
   font-family: inherit;
   color: inherit;
   margin-right: 10px;
+  transition: border 0.4s;
 }
 
 .add__description {
@@ -169,3 +171,119 @@ body {
 }
 
 /* ******** LISTS ******** */
+
+.container {
+  width: 1000px;
+  margin: 60px auto;
+  display: flex;
+}
+
+.income {
+  width: 47.5%;
+  margin-right: 5%;
+}
+
+.expenses {
+  width: 47.5%;
+}
+
+.income h2,
+.expenses h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.income h2 {
+  color: #1e9751;
+}
+
+.expenses h2 {
+  color: #b13527;
+}
+
+.item,
+.val-del {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.val-del {
+  width: 25%;
+}
+
+.item {
+  padding: 13px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.item:first-child {
+  border-top: 1px solid #e7e7e7;
+}
+
+.item:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+.item__value {
+  transition: transform 0.3s;
+}
+
+.item__percentage {
+  color: #fff;
+  transition: transform 0.3s;
+  font-size: 11px;
+  background-color: #cc5c50e5;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.income .item__value,
+.income .item__delete--btn {
+  color: #1e9751;
+}
+
+.expenses .item__value,
+.expenses .item__delete--btn {
+  color: #b13527;
+}
+
+.item__delete--btn {
+  font-size: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  display: none;
+}
+
+.item__delete--btn:focus {
+  outline: none;
+}
+.item__delete--btn:active {
+  transform: translateY(2px);
+}
+
+.item:hover .item__delete--btn {
+  display: block;
+}
+.item:hover .item__value {
+  transform: translateX(-20px);
+}
+.item:hover .item__percentage {
+  transform: translateX(-20px);
+}
+
+/* .unpaid {
+  background-color: #FFDAD9 !important;
+  cursor: pointer;
+  color: #FF5049;
+
+}
+
+.unpaid .item__percentage { box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1); }
+.unpaid:hover .item__description { font-weight: 900; } */
