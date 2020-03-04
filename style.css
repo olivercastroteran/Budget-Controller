@@ -210,6 +210,14 @@ body {
   justify-content: space-between;
 }
 
+.income__list .val-del {
+  justify-content: flex-end;
+}
+
+.expenses__list .val-del {
+  justify-content: flex-end;
+}
+
 .val-del {
   width: 25%;
 }
@@ -233,6 +241,7 @@ body {
 
 .item__percentage {
   color: #fff;
+  margin-left: 10px;
   transition: transform 0.3s;
   font-size: 11px;
   background-color: #cc5c50e5;
