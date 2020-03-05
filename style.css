@@ -95,6 +95,14 @@ body {
   font-size: 12px;
 }
 
+.red {
+  color: #b13527 !important;
+}
+
+.red-focus:focus {
+  border: 1px solid #b13527 !important;
+}
+
 /* ************************************** BOTTOM PART ************************************** */
 
 /* ******** FORM ******** */
